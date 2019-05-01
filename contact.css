@@ -1,0 +1,46 @@
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+img#logo {
+    display: inline;
+    float: left;
+    width: 20%;
+    height: 45%;
+}
+
+nav {
+    display: inline;
+}
+
+nav ul li {
+    text-align: center;
+    list-style: none;
+    display: inline;
+    padding: 5px 50px 0px 50px;
+}
+
+/* changes the text color to dark cyan */
+li a {
+    color: black;
+}
+
+/* displays the nav list items as block, floated left, has a width of 25% */
+nav li {
+    font-size: 18px;
+    display: block;
+    float: left;
+    width: 25%;
+    height: 30px;
+    letter-spacing: 5px;
+}
+
+h1 {
+    display: block;
+    text-align: center;
+
+}
+
+img#instructor {
+    width: 25%;
+}

@@ -1,7 +1,7 @@
 .downloads {
     text-align: center;
     list-style: none;
-    display: inline;
+    display: block;
     padding: 5px 50px 0px 50px;
     color: orange;
     text-decoration: none;

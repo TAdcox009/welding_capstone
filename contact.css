@@ -3,8 +3,6 @@ body {
 }
 
 img#logo {
-    display: inline;
-    float: left;
     width: 20%;
     height: 45%;
 }

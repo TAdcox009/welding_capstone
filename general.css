@@ -43,7 +43,8 @@ nav ul li {
     text-align: center;
     list-style: none;
     display: inline;
-    padding: 5px 50px 5px 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 /* displays the nav list items as block, floated left, has a width of 25% */
@@ -51,7 +52,7 @@ nav li {
     font-size: 20px;
     display: block;
     float: left;
-    width: 25%;
+    width: 20%;
     height: 30px;
     letter-spacing: 5px;
 }
@@ -68,19 +69,14 @@ nav ul li a:hover,
 nav ul li a:active {
     background-color: rgb(229, 137, 25);
 }
-
 /* End Nav styles */
-
-
-
 
 
 img.slidePics {
     width: 100%;
 }
 
-
-/* This is for the image and the its sdlide show */
+/* This is for the image and the its slide show */
 /* Slideshow container */
 .slideshow-container {
     max-width: 60%;
@@ -93,36 +89,6 @@ img.slidePics {
     display: none;
 }
 
-/* Next & previous buttons */
-.prev,
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-
 /* Number text (1/3 etc) */
 .numbertext {
     color: #f2f2f2;
@@ -131,48 +97,18 @@ img.slidePics {
     position: absolute;
     top: 30px;
 }
+/* end of slide show css */
 
-/* The dots/bullets/indicators */
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
+
+/* Footer */
+
+footer {
+    background-color: rgb(28, 28, 28);
+    color: rgb(227, 227, 227);
 }
 
-.active,
-.dot:hover {
-    background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-    from {
-        opacity: .4
-    }
-
-    to {
-        opacity: 1
-    }
-}
-
-@keyframes fade {
-    from {
-        opacity: .4
-    }
-
-    to {
-        opacity: 1
-    }
+footer p a.logos::after {
+    clear: both;
+    content: "";
+    display: table;
 }

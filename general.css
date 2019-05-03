@@ -43,7 +43,8 @@ nav ul li {
     text-align: center;
     list-style: none;
     display: inline;
-    padding: 5px 50px 5px 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 /* displays the nav list items as block, floated left, has a width of 25% */
@@ -51,7 +52,7 @@ nav li {
     font-size: 20px;
     display: block;
     float: left;
-    width: 25%;
+    width: 20%;
     height: 30px;
     letter-spacing: 5px;
 }
@@ -96,9 +97,18 @@ img.slidePics {
     position: absolute;
     top: 30px;
 }
-
 /* end of slide show css */
 
 
 /* Footer */
 
+footer {
+    background-color: rgb(28, 28, 28);
+    color: rgb(227, 227, 227);
+}
+
+footer p a.logos::after {
+    clear: both;
+    content: "";
+    display: table;
+}

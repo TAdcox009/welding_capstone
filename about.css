@@ -44,7 +44,7 @@ nav li {
     font-size: 20px;
     display: block;
     float: left;
-    width: 25%;
+    width: 20%;
     height: 30px;
     letter-spacing: 5px;
 }
@@ -63,3 +63,23 @@ nav ul li a:active {
 }
 
 /* End Nav styles */
+
+/* Media Queries */
+
+/*
+===============================
+Mobile Styles up to 480 pixels
+===============================
+*/
+
+/* this is a media querie for mobile devices with a max width of 480 pixels */
+@media only screen and (max-width:480px) {}
+
+/*
+============================================
+Tablet and Desktop Devices: 481px or more
+============================================
+*/
+
+/* this is a media querie for devices with a width of 481 pixels or greater*/
+@media only screen and (min-width:481px) {}

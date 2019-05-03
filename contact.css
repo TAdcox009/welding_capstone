@@ -7,6 +7,7 @@ img#logo {
 }
 
 /* Nav styles */
+
 nav {
     height: 100%;
     background-color: rgb(247, 148, 29);
@@ -30,7 +31,8 @@ nav ul li {
     text-align: center;
     list-style: none;
     display: inline;
-    padding: 5px 50px 5px 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 /* displays the nav list items as block, floated left, has a width of 25% */
@@ -38,7 +40,7 @@ nav li {
     font-size: 20px;
     display: block;
     float: left;
-    width: 25%;
+    width: 20%;
     height: 30px;
     letter-spacing: 5px;
 }
@@ -47,17 +49,14 @@ nav li {
 nav ul li a {
     color: black;
     width: 100%;
-    padding: 2px 20px;
-    font-size: 20px
+    padding: 0px 20px;
 }
 
 /* Makes the nav a little more responsive */
 nav ul li a:hover,
 nav ul li a:active {
     background-color: rgb(229, 137, 25);
-    font-size: 22px;
 }
-
 /* End Nav styles */
 
 

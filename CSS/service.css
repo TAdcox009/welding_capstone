@@ -1,18 +1,10 @@
-.downloads {
-    text-align: center;
-    list-style: none;
-    display: block;
-    padding: 5px 50px 0px 50px;
-    color: orange;
-    text-decoration: none;
-}
-
 #logo {
     width: 20%;
     height: 45%;
 }
 
 /* Nav styles */
+
 nav {
     height: 100%;
     background-color: rgb(247, 148, 29);
@@ -36,7 +28,8 @@ nav ul li {
     text-align: center;
     list-style: none;
     display: inline;
-    padding: 5px 50px 5px 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 /* displays the nav list items as block, floated left, has a width of 25% */
@@ -54,38 +47,28 @@ nav ul li a {
     color: black;
     width: 100%;
     padding: 0px 20px;
+    font-size: 20px;
 }
 
 /* Makes the nav a little more responsive */
 nav ul li a:hover,
 nav ul li a:active {
     background-color: rgb(229, 137, 25);
+    font-size: 22px;
 }
-
 /* End Nav styles */
 
-section#text {
-    display: block;
-    float: left;
-    width: 50%;
+/* Footer */
+
+footer {
+    background-color: rgb(28, 28, 28);
+    color: rgb(227, 227, 227);
 }
 
-p {
-    text-indent: 2em;
-    padding-top: 20px;
-    padding-left: 20px;
-}
-
-
-#right {
-    float: right;
-    display: block;
-    padding-top: 20px;
-    margin-right: 50px;
-}
-
-.downloads {
-    line-height: 30px;
+footer p a.logos::after {
+    clear: both;
+    content: "";
+    display: table;
 }
 
 /* Media Queries */

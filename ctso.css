@@ -55,6 +55,19 @@ nav ul li a:active {
 
 /* End Nav styles */
 
+/* Footer */
+
+footer {
+    background-color: rgb(28, 28, 28);
+    color: rgb(227, 227, 227);
+}
+
+footer p a.logos::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
 /* Media Queries */
 
 /*

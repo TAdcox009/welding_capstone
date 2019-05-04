@@ -64,6 +64,30 @@ nav ul li a:active {
 
 /* End Nav styles */
 
+section#text {
+    display: block;
+    float: left;
+    width: 50%;
+}
+
+p {
+    text-indent: 2em;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+
+#right {
+    float: right;
+    display: block;
+    padding-top: 20px;
+    margin-right: 50px;
+}
+
+.downloads {
+    line-height: 30px;
+}
+
 /* Media Queries */
 
 /*

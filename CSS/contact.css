@@ -60,6 +60,7 @@ nav ul li a:active {
     background-color: rgb(229, 137, 25);
     font-size: 22px;
 }
+
 /* End Nav styles */
 
 
@@ -72,5 +73,44 @@ h1 {
     letter-spacing: 5px;
 }
 
+<<<<<<< HEAD:contact.css
+img#instructor {
+    width: 25%;
+}
+
+/* Footer */
+
+footer {
+    background-color: rgb(28, 28, 28);
+    color: rgb(227, 227, 227);
+}
+
+footer p a.logos::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+/* Media Queries */
+
+/*
+===============================
+Mobile Styles up to 480 pixels
+===============================
+*/
+
+/* this is a media querie for mobile devices with a max width of 480 pixels */
+@media only screen and (max-width:480px) {}
+
+/*
+============================================
+Tablet and Desktop Devices: 481px or more
+============================================
+*/
+
+/* this is a media querie for devices with a width of 481 pixels or greater*/
+@media only screen and (min-width:481px) {}
+=======
 
 /* Form styles */
+>>>>>>> master:CSS/contact.css

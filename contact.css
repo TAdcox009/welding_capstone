@@ -1,30 +1,9 @@
-/* 
-    Gabriel Hernandez
-    CSS for index.html
-
-*/
-
-
-* {
-    box-sizing: border-box
-}
-
 body {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-#logo {
+img#logo {
     width: 20%;
-    height: 45%;
-}
-
-h1 {
-    display: block;
-    text-align: center;
-    font-size: 3em;
-    float: right;
-    padding: 10px 20px 0px 0px;
-    letter-spacing: 5px;
 }
 
 /* Nav styles */
@@ -71,55 +50,43 @@ nav ul li a {
     color: black;
     width: 100%;
     padding: 0px 20px;
-    font-size: 20px;
 }
 
 /* Makes the nav a little more responsive */
 nav ul li a:hover,
 nav ul li a:active {
     background-color: rgb(229, 137, 25);
-    font-size: 22px;
 }
 
 /* End Nav styles */
 
 
-img.slidePics {
-    width: 100%;
+h1 {
+    display: block;
+    text-align: center;
+    font-size: 3em;
+    float: right;
+    padding: 10px 20px 0px 0px;
+    letter-spacing: 5px;
 }
 
+img#instructor {
+    width: 25%;
+}
 
 /* Footer */
+
 footer {
     background-color: rgb(28, 28, 28);
     color: rgb(227, 227, 227);
-    padding-top: 10px;
-    padding-bottom: 10px;
+}
+
+footer p a.logos::after {
     clear: both;
+    content: "";
+    display: table;
 }
 
-footer p {
-    display: inline;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-<<<<<<< HEAD:general.css
-
-/* end of slide show css */
-=======
->>>>>>> master:CSS/general.css
-
-
-
-footer a {
-    color: rgb(227, 227, 227);
-}
-
-footer p:last-of-type {
-    float: right;
-}
-
-<<<<<<< HEAD:general.css
 /* Media Queries */
 
 /*
@@ -139,5 +106,3 @@ Tablet and Desktop Devices: 481px or more
 
 /* this is a media querie for devices with a width of 481 pixels or greater*/
 @media only screen and (min-width:481px) {}
-=======
->>>>>>> master:CSS/general.css

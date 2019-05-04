@@ -7,8 +7,9 @@
     <title>Contact</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="CSS/reset.css" />
+    <link rel="stylesheet" href="CSS/general.css"/>
+    <link rel="stylesheet" href="CSS/contact.css" />
     <link rel="icon" type="image/png" href="Pictures/02. Arrows Orange Gradient.png" />
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet" />
 </head>
@@ -29,19 +30,52 @@
     </header>
 
 
-
     <img src="Pictures/Delphina Yazzie.jpg" alt="instructor" id="instructor" />
+    
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3325.6720330141216!2d-112.2950261849781!3d33.5359116807496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b4104080e38d9%3A0x1fbd2919e78fa444!2sWestMEC+Central+Campus!5e0!3m2!1sen!2sus!4v1556756520536!5m2!1sen!2sus" width="250" height="250" frameborder="0" style="border:0" \></iframe>
+
+
+    <form method="post">
+        <legend>Contact us for more questions!</legend>
+        <fieldset>
+            <label for="name"></label>
+        </fieldset>
+
+        <div class="formRow">
+            <label for="name">Name*</label>
+            <input name="custName" id="name" type="text" placeholder="First and Last name" required/>
+        </div> 
+
+        <div class="formRow">
+            <label for="phone">Phone number*</label>
+            <input name="custPhone" id="phone" type="tel" placeholder="(nnn) nnn-nnnn" required pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" />
+        </div>
+
+        <div class="formRow">
+            <label for="mail">E-mail*</label>
+            <input name="custEmail" id="mail" type="email" required/>
+        </div>
+
+        <label for="commBox">Lets us know of any questions you have</label>
+            <textarea name="custExp" id="commBox"></textarea>
+
+        <div id="buttons">
+            <input type="submit" value="Submit My Survey" />
+            <input type="reset" value="Cancel" />
+        </div>
+
+    </form>
 
     <!-- Contact inforamtion  -->
-    <address>
+    <!-- <address>
         <strong>Main/Attenddance Line:</strong> 623.209.8070<br />
         Instructor Number (Mobile): 928-640-8122<br />
         Instructor Email: <a href="mailto:delphina.yazzie@west-mec.org">delphina.yazzie@west-mec.org</a><br />
         Loction: 6997 N. Glen Harbor Boulevard <br />
         Glendale, AZ 85307<br />
-    </address>
+    </address> -->
 
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3325.6720330141216!2d-112.2950261849781!3d33.5359116807496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b4104080e38d9%3A0x1fbd2919e78fa444!2sWestMEC+Central+Campus!5e0!3m2!1sen!2sus!4v1556756520536!5m2!1sen!2sus" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+    
 
 
     <footer>

@@ -7,6 +7,22 @@ body {
     height: 45%;
 }
 
+iframe {
+    float: right;
+    display: block;
+    padding-top: 20px;
+    margin-right: 50px;
+}
+
+section {
+    display: block;
+    float: left;
+    width: 50%;
+    text-indent: 2em;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
 /* Nav styles */
 
 nav {

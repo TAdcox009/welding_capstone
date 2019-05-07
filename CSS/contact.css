@@ -1,76 +1,56 @@
-body {
-    font-family: 'Roboto Condensed', sans-serif;
-}
+/* 
+    Gabriel Hernandez 
+    CSS styel for the contact page
+*/
 
-#logo {
-    width: 20%;
-    height: 45%;
-}
-
-/* Nav styles */
-
-nav {
-    height: 100%;
-    background-color: rgb(247, 148, 29);
-}
-
-/* fixes container collapse */
-nav::after {
-    clear: both;
-    content: "";
-    display: table;
-}
-
-/* fixes container collapse */
-nav ul::after {
-    clear: both;
-    content: "";
-    display: table;
-}
-
-nav ul li {
-    text-align: center;
-    list-style: none;
-    display: inline;
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-
-/* displays the nav list items as block, floated left, has a width of 25% */
-nav li {
-    font-size: 20px;
+/* Main Body Layout */
+div#left {
     display: block;
     float: left;
-    width: 20%;
-    height: 30px;
-    letter-spacing: 5px;
+    width: 45%;
 }
 
-/* changes the text color to black */
-nav ul li a {
-    color: black;
-    width: 100%;
-    padding: 0px 20px;
-    font-size: 20px;
-}
-
-/* Makes the nav a little more responsive */
-nav ul li a:hover,
-nav ul li a:active {
-    background-color: rgb(229, 137, 25);
-    font-size: 22px;
-}
-/* End Nav styles */
-
-
-h1 {
+div#right {
     display: block;
-    text-align: center;
-    font-size: 3em;
     float: right;
-    padding: 10px 20px 0px 0px;
-    letter-spacing: 5px;
+    width: 45%;
+
 }
 
+div#right, div#left {
+    margin-top: 30px;
+}
 
-/* Form styles */
+div#left iframe {
+display: block;
+}
+
+/* Image/Google Maps styles */
+
+
+
+/* Form Styles */
+form {
+    line-height: 30px;
+}
+
+/* form label {
+    display: block;
+    float: left;
+} */
+
+form input {
+    display: block;
+    float: right;
+    margin-right: 100px;
+}
+
+textarea {
+    margin-top: 10px;
+    height: 100px;
+    width: 95%;  
+}
+
+button {
+    text-align: center;
+}

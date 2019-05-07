@@ -1,16 +1,12 @@
 /* 
     Gabriel Hernandez
-    CSS for index.html
+    CSS that apply to all pages (e.g. nav, footer, h1)
 
 */
-
-
-* {
-    box-sizing: border-box
-}
-
+html,
 body {
     font-family: 'Roboto Condensed', sans-serif;
+    height: 100%;
 }
 
 #logo {
@@ -91,16 +87,15 @@ img.slidePics {
 
 /* Footer */
 footer {
+    width: 100%;
     background-color: rgb(28, 28, 28);
     color: rgb(227, 227, 227);
     padding-top: 10px;
     padding-bottom: 10px;
     clear: both;
-    position: fixed;
-    left: 0;
+    position: absolute;
     bottom: 0;
-    width: 100%;
- }
+}
 
 footer p {
     display: inline;
@@ -108,12 +103,11 @@ footer p {
     padding-right: 15px;
 }
 
-footer a img{
-    float: right;
-    width: 20px;
-    height: 20px;
-    margin-left: 10px;
-}
+/* end of slide show css */
+=======
+>>>>>>> master:CSS/general.css
+
+
 
 footer a {
     color: rgb(227, 227, 227);
@@ -123,9 +117,11 @@ footer p:last-of-type {
     float: right;
 }
 
+<<<<<<< HEAD:general.css
 /* Media Queries */
 
 /*
+===============================
 Mobile Styles up to 480 pixels
 ===============================
 */

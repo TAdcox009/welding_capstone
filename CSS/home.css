@@ -1,3 +1,13 @@
+/* 
+    Todd Adcox & Gabriel Hernandez
+    CSS for the index.html
+
+*/
+
+body {
+    /* background: linear-gradient(-45deg, rgba(255, 255, 255, 0.84), rgba(255, 255, 255, 0.84), rgba(255, 255, 255, 0.84), rgba(149, 149, 149, 0.84)) */
+}
+
 /* This is for the image and the its slide show */
 
 img.slidePics {

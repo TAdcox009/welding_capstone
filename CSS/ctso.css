@@ -1,74 +1,29 @@
-#logo {
-    width: 20%;
-    height: 45%;
+#right {
+    float: right;
+    display: block;
+    padding-top: 20px;
+    margin-right: 50px;
 }
 
-/* Nav styles */
-
-nav {
-    height: 100%;
-    background-color: rgb(247, 148, 29);
-}
-
-/* fixes container collapse */
-nav::after {
-    clear: both;
-    content: "";
-    display: table;
-}
-
-/* fixes container collapse */
-nav ul::after {
-    clear: both;
-    content: "";
-    display: table;
-}
-
-nav ul li {
+#ctso {
     text-align: center;
     list-style: none;
-    display: inline;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    display: block;
+    padding: 5px 50px 0px 50px;
+    color: orange;
+    line-height: 30px;
 }
 
-/* displays the nav list items as block, floated left, has a width of 25% */
-nav li {
-    font-size: 20px;
+section#text {
     display: block;
     float: left;
-    width: 20%;
-    height: 30px;
-    letter-spacing: 5px;
+    width: 50%;
 }
 
-/* changes the text color to black */
-nav ul li a {
-    color: black;
-    width: 100%;
-    padding: 0px 20px;
-    font-size: 20px;
-}
-
-/* Makes the nav a little more responsive */
-nav ul li a:hover,
-nav ul li a:active {
-    background-color: rgb(229, 137, 25);
-    font-size: 22px;
-}
-/* End Nav styles */
-
-/* Footer */
-
-footer {
-    background-color: rgb(28, 28, 28);
-    color: rgb(227, 227, 227);
-}
-
-footer p a.logos::after {
-    clear: both;
-    content: "";
-    display: table;
+.abt{
+    text-indent: 2em;
+    padding-top: 20px;
+    padding-left: 20px;
 }
 
 /* Media Queries */

@@ -5,6 +5,7 @@
     padding: 5px 50px 0px 50px;
     color: orange;
     text-decoration: none;
+    line-height: 30px;
 }
 
 #logo {
@@ -73,7 +74,7 @@ section#text {
     width: 50%;
 }
 
-p {
+.abt{
     text-indent: 2em;
     padding-top: 20px;
     padding-left: 20px;
@@ -85,10 +86,6 @@ p {
     display: block;
     padding-top: 20px;
     margin-right: 50px;
-}
-
-.downloads {
-    line-height: 30px;
 }
 
 /* Media Queries */

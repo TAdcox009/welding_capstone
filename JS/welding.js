@@ -14,12 +14,3 @@ function showSlides() {
     slides[slideIndex - 1].style.display = "block";
     setTimeout(showSlides, 3000); // Change image every 3 seconds
 }
-
-function validateName() {
-    var fName = document.getElementById("name");
-    if (fName.selectedIndex === 0){
-          fName.setCustomValidity("Select the expiration month");
-    } else {
-          fName.setCustomValidity("");
-    }
-}

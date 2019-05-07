@@ -87,37 +87,40 @@ img.slidePics {
 
 /* Footer */
 footer {
-    width: 100%;
     background-color: rgb(28, 28, 28);
     color: rgb(227, 227, 227);
     padding-top: 10px;
     padding-bottom: 10px;
     clear: both;
-    position: absolute;
+    position: fixed;
+    left: 0;
     bottom: 0;
-}
-
-footer p {
+    width: 100%;
+ }
+ 
+ footer p {
     display: inline;
     padding-left: 15px;
     padding-right: 15px;
-}
-
-/* end of slide show css */
-=======
->>>>>>> master:CSS/general.css
-
-
-
-footer a {
-    color: rgb(227, 227, 227);
-}
-
-footer p:last-of-type {
+ }
+ 
+ footer a img{
     float: right;
-}
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+ }
+ 
+ footer a {
+    color: rgb(227, 227, 227);
+ }
+ 
+ footer p:last-of-type {
+    float: right;
+ }
+ 
+ 
 
-<<<<<<< HEAD:general.css
 /* Media Queries */
 
 /*

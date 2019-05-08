@@ -1,56 +1,46 @@
 /* 
-    Gabriel Hernandez 
-    CSS styel for the contact page
+    Gabriel Hernadnez
+    Css for the contact page
 */
 
-/* Main Body Layout */
-div#left {
-    display: block;
-    float: left;
-    width: 45%;
-}
-
-div#right {
-    display: block;
-    float: right;
-    width: 45%;
-
-}
-
-div#right, div#left {
-    margin-top: 30px;
-}
-
-div#left iframe {
-display: block;
-}
-
-/* Image/Google Maps styles */
-
-
-
-/* Form Styles */
 form {
-    line-height: 30px;
+    min-height: 100%;  
+    margin: 50px auto;
+    min-width: 480px;
+    max-width: 960px;  
+    width: 100%;
+    line-height: 50px;
+}
+ 
+div{
+    margin: 0px 50px;
 }
 
-/* form label {
-    display: block;
-    float: left;
-} */
+fieldset {
+    border-width: 3px;
+    border-color: black;
+    border-radius: 10px;
+}
 
-form input {
-    display: block;
+legend {
+    font-size: 2em;
+    letter-spacing: 5px;
+}
+
+input#name, input#phone, input#mail {
     float: right;
-    margin-right: 100px;
+    width: 30%;
+    height: 20px;
 }
 
 textarea {
     margin-top: 10px;
     height: 100px;
-    width: 95%;  
+    width: 55%;
+    float: right;
+    font-size: 14px;
 }
 
-button {
+div#buttons {
     text-align: center;
 }

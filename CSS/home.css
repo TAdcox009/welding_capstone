@@ -7,6 +7,7 @@
 /* This is for the image and the its slide show */
 
 img.slidePics {
+    padding-top: 20px;
     width: 100%;
 }
 
@@ -28,6 +29,7 @@ img.slidePics {
     font-size: 14px;
     padding: 8px 12px;
     position: absolute;
+    top: 20px;
 }
 
 /* end of slide show css */

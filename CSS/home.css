@@ -4,10 +4,6 @@
 
 */
 
-body {
-    /* background: linear-gradient(-45deg, rgba(255, 255, 255, 0.84), rgba(255, 255, 255, 0.84), rgba(255, 255, 255, 0.84), rgba(149, 149, 149, 0.84)) */
-}
-
 /* This is for the image and the its slide show */
 
 img.slidePics {
@@ -35,10 +31,48 @@ img.slidePics {
     position: absolute;
     top: 20px;
 }
+
 /* end of slide show css */
 
 div#body p {
     font-size: 18px;
     display: block;
-    
+
 }
+
+/* this is a media querie for mobile devices with a max width of 480 pixels */
+@media only screen and (max-width:480px) {
+
+    .hide,
+    .slideshow-container,
+    #logo {
+        display: none;
+    }
+
+    nav ul li {
+        text-align: center;
+        list-style: none;
+        display: inline;
+        padding: 0px 50px 5px 50px;
+        width: 100%;
+    }
+
+    nav ul li a {
+        color: black;
+    }
+
+    nav li {
+        display: block;
+        float: left;
+        width: 20%;
+    }
+}
+
+/*
+============================================
+Tablet and Desktop Devices: 481px or more
+============================================
+*/
+
+/* this is a media querie for devices with a width of 481 pixels or greater*/
+@media only screen and (min-width:481px) {}

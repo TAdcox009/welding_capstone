@@ -96,30 +96,30 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
- }
- 
- footer p {
+}
+
+footer p {
     display: inline;
     padding-left: 15px;
     padding-right: 15px;
- }
- 
- footer a img{
+}
+
+footer a img {
     float: right;
     width: 20px;
     height: 20px;
     margin-left: 10px;
- }
- 
- footer a {
+}
+
+footer a {
     color: rgb(227, 227, 227);
- }
- 
- footer p:last-of-type {
+}
+
+footer p:last-of-type {
     float: right;
- }
- 
- 
+}
+
+
 
 /* Media Queries */
 

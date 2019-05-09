@@ -13,7 +13,7 @@ img.slidePics {
 
 /* Slideshow container */
 .slideshow-container {
-    max-width: 60%;
+    width: 60%;
     position: relative;
     margin: auto;
 }

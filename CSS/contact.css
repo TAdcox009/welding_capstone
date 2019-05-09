@@ -2,6 +2,9 @@
     Gabriel Hernadnez
     Css for the contact page
 */
+body,html {
+    width: 100%;
+}
 
 form {
     min-height: 100%;  
@@ -20,6 +23,7 @@ fieldset {
     border-width: 3px;
     border-color: black;
     border-radius: 10px;
+    background: linear-gradient(white, rgb(230, 230, 230));
 }
 
 legend {
@@ -43,4 +47,43 @@ textarea {
 
 div#buttons {
     text-align: center;
+}
+
+/* For devices with screens 408px or less */
+
+@media only screen and (max-width:480px) {
+    body, html {
+        width: 100%;
+    }
+
+    form {
+        min-height: 100%;   ;
+        line-height: 50px;
+        width: 100%;
+        margin: 0px;
+    }
+
+    legend {
+        font-size: 18px;
+        letter-spacing: 2px;
+    }
+
+    fieldset {
+        border: 0px white solid;
+        
+    }
+
+    input#name, input#phone, input#mail {
+        margin: 0px;
+        border: 1px solid black;
+    }
+
+    textarea {
+        border: 1px solid red;
+        width: 80%;
+        display: block;
+        font-size: 12px;
+    }
+
+
 }

@@ -29,37 +29,42 @@
         </nav>
     </header>
 
-        <form method="post">
-            <fieldset>
-                <legend>Contact us for more questions!</legend>
-                <label for="name"></label>
+    <form method="post">
+        <fieldset>
+            <legend>Contact us for more questions!</legend>
+            <label for="name"></label>
 
 
-                <div class="formRow">
-                    <label for="name">Name*</label>
-                    <input name="custName" id="name" type="text" placeholder="First and Last name" required />
-                </div>
+            <div class="formRow">
+                <label for="name">Name*</label>
+                <input name="custName" id="name" type="text" placeholder="First and Last name" required />
+            </div>
 
-                <div class="formRow">
-                    <label for="phone">Phone number*</label>
-                    <input name="custPhone" id="phone" type="tel" placeholder="(nnn) nnn-nnnn" required
-                        pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" />
-                </div>
+            <div class="formRow">
+                <label for="phone">Phone number*</label>
+                <input name="custPhone" id="phone" type="tel" placeholder="(nnn) nnn-nnnn" required
+                    pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" />
+            </div>
+
+            <div class="formRow">
+                <label for="mail">E-mail</label>
+                <input name="custEmail" id="mail" type="email" />
+            </div>
 
             <div>
-            <label for="commBox" id="commBox">Lets us know of any questions you have</label>
+                <label for="commBox" id="commBox">Lets us know of any questions you have</label>
                 <textarea name="custExp" id="commBox"></textarea>
 
-            </fieldset>
+        </fieldset>
 
-            <div id="buttons">
-                <input type="submit" id="submittButton" value="Submit My Survey" />
-                <input type="reset" value="Cancel" />
-                </div>
-        </form>
+        <div id="buttons">
+            <input type="submit" id="submittButton" value="Submit My Survey" />
+            <input type="reset" value="Cancel" />
+        </div>
+    </form>
 
-        <!-- Contact inforamtion  -->
-        <!-- <address>
+    <!-- Contact inforamtion  -->
+    <!-- <address>
         <strong>Main/Attenddance Line:</strong> 623.209.8070<br />
         Instructor Number (Mobile): 928-640-8122<br />
         Instructor Email: <a href="mailto:delphina.yazzie@west-mec.org">delphina.yazzie@west-mec.org</a><br />
@@ -81,7 +86,7 @@
                     alt="facebookLogo"></a>
         </p>
     </footer>
-    <script src="JS/fomValidation.js"></script>
+    <script src="JS/fomValidation.js" async></script>
 </body>
 
 </html>

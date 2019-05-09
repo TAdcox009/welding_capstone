@@ -41,9 +41,14 @@
                 </div>
 
                 <div class="formRow">
-                    <label for="phone">Phone number*</label>
-                    <input name="custPhone" id="phone" type="tel" placeholder="(nnn) nnn-nnnn" required
+                    <label for="phone">Phone number</label>
+                    <input name="custPhone" id="phone" type="tel" placeholder="(nnn) nnn-nnnn" 
                         pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" />
+                </div>
+
+                <div id="formRow">
+                    <label for="mail">E-mail*</label>
+                    <input type="email" name="custEmail" id="mail" required/>
                 </div>
 
             <div>
@@ -81,7 +86,7 @@
                     alt="facebookLogo"></a>
         </p>
     </footer>
-    <script src="JS/fomValidation.js"></script>
+    <script src="JS/fomValidation.js" async></script>
 </body>
 
 </html>

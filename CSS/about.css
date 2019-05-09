@@ -66,6 +66,7 @@ nav ul li a:active {
     background-color: rgb(229, 137, 25);
     font-size: 22px;
 }
+
 /* End Nav styles */
 
 section#text {
@@ -74,7 +75,7 @@ section#text {
     width: 50%;
 }
 
-.abt{
+.abt {
     text-indent: 2em;
     padding-top: 20px;
     padding-left: 20px;
@@ -97,7 +98,40 @@ Mobile Styles up to 480 pixels
 */
 
 /* this is a media querie for mobile devices with a max width of 480 pixels */
-@media only screen and (max-width:480px) {}
+@media only screen and (max-width:480px) {
+
+    .hide,
+    #logo {
+        display: none;
+    }
+
+    nav ul li {
+        text-align: center;
+        list-style: none;
+        display: inline;
+        padding: 0px 50px 5px 50px;
+        width: 100%;
+    }
+
+    nav ul li a {
+        color: black;
+    }
+
+    nav li {
+        display: block;
+        float: left;
+        width: 20%;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+
+    #p2,
+    footer a img {
+        display: none;
+    }
+}
 
 /*
 ============================================

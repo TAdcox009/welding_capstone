@@ -41,66 +41,18 @@ Mobile Styles up to 480 pixels
 
 /* this is a media query for mobile devices with a max width of 480 pixels */
 @media only screen and (max-width:480px) {
-    
-    
     section#text {
         width: 95%;
     }
-@media only screen and (max-width:480px) {
-    .hide {
-        display: none;
-    }
-
-    aside{
-        width: 100%;
-    }
-
-    iframe { 
-        width: 90%;
-        height: 300px;
-        margin-left: 70px;
-    }
-
-
-}
-
-    #logo {
-        margin-left: 175px;
-    }
-
-    nav ul li {
-        text-align: center;
-        list-style: none;
-        display: inline;
-        padding: 0px 50px 5px 50px;
-        width: 100%;
-    }
-
-    nav ul li a {
-        color: black;
-        font-size: 15px;
-    }
-
-    nav li {
-        display: block;
-        float: left;
-        width: 20%;
-    }
-
-    footer p {
-        font-size: 12px;
-    }
-
-    #p2,
-    footer a img {
-        display: none;
-    }
-
     .abt {
         text-indent: 0em;
         padding-top: 10px;
+    } 
+
+    #vid {
+        width: 325px;
+        height: 175px;
     }
-}
 }
 
 /*

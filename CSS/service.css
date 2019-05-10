@@ -1,12 +1,9 @@
-/* Media Queries */
 div#container {
     column-count: 3;
     column-rule: 2px solid #999;
     margin-top: 50px;
     padding-bottom: 30px;
 }
-
-
 
 div.column {
     /* width: 33.33%; */
@@ -33,45 +30,7 @@ Mobile Styles up to 480 pixels
 */
 
 /* this is a media querie for mobile devices with a max width of 480 pixels */
-@media only screen and (max-width:480px) {
-
-    .hide {
-        display: none;
-    }
-
-    nav ul li {
-        text-align: center;
-        list-style: none;
-        display: inline;
-        padding: 0px 50px 5px 50px;
-        width: 100%;
-    }
-
-    nav ul li a {
-        color: black;
-        font-size: 15px;
-    }
-
-    #logo {
-        margin-left: 175px;
-    }
-
-    nav li {
-        display: block;
-        float: left;
-        width: 20%;
-    }
-
-    footer p {
-        font-size: 12px;
-    }
-
-    #p2,
-    footer a img {
-        display: none;
-    }
-}
-
+@media only screen and (max-width:480px) {}
 /*
 ============================================
 Tablet and Desktop Devices: 481px or more

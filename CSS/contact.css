@@ -9,7 +9,7 @@ html {
 
 form {
     min-height: 100%;
-    margin: 50px auto;
+    margin: auto;
     min-width: 480px;
     max-width: 960px;
     width: 100%;
@@ -91,42 +91,4 @@ div#buttons {
         display: block;
         font-size: 12px;
     }
-
-    .hide {
-        display: none;
-    }
-
-    nav ul li {
-        text-align: center;
-        list-style: none;
-        display: inline;
-        padding: 0px 50px 5px 50px;
-        width: 100%;
-    }
-
-    nav ul li a {
-        color: black;
-        font-size: 15px;
-    }
-
-    #logo {
-        margin-left: 175px;
-    }
-
-    nav li {
-        display: block;
-        float: left;
-        width: 20%;
-    }
-
-    footer p {
-        font-size: 12px;
-    }
-
-    #p2,
-    footer a img {
-        display: none;
-    }
-
-
 }

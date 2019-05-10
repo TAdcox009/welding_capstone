@@ -1,4 +1,30 @@
 /* Media Queries */
+div#container {
+    column-count: 3;
+    column-rule: 2px solid #999;
+    margin-top: 50px;
+    padding-bottom: 30px;
+}
+
+
+
+div.column {
+    /* width: 33.33%; */
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+img.exp {
+    width: 100%;
+    padding-top: 10px;
+    border-radius: 25px;
+}
+
+figcaption {
+    line-height: 35px;
+}
+
 
 /*
 ===============================

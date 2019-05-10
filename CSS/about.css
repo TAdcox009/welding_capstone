@@ -13,61 +13,6 @@
     height: 45%;
 }
 
-/* Nav styles */
-
-nav {
-    height: 100%;
-    background-color: rgb(247, 148, 29);
-}
-
-/* fixes container collapse */
-nav::after {
-    clear: both;
-    content: "";
-    display: table;
-}
-
-/* fixes container collapse */
-nav ul::after {
-    clear: both;
-    content: "";
-    display: table;
-}
-
-nav ul li {
-    text-align: center;
-    list-style: none;
-    display: inline;
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-
-/* displays the nav list items as block, floated left, has a width of 25% */
-nav li {
-    font-size: 20px;
-    display: block;
-    float: left;
-    width: 20%;
-    height: 30px;
-    letter-spacing: 5px;
-}
-
-/* changes the text color to black */
-nav ul li a {
-    color: black;
-    width: 100%;
-    padding: 0px 20px;
-    font-size: 20px;
-}
-
-/* Makes the nav a little more responsive */
-nav ul li a:hover,
-nav ul li a:active {
-    background-color: rgb(229, 137, 25);
-    font-size: 22px;
-}
-
-/* End Nav styles */
 
 section#text {
     display: block;

@@ -2,13 +2,14 @@
     Gabriel Hernadnez
     Css for the contact page
 */
-body,html {
+body,
+html {
     width: 100%;
 }
 
 form {
-    min-height: 100%;
-    margin: 50px auto;
+    min-height: 81%;
+    margin: auto;
     min-width: 480px;
     max-width: 960px;
     width: 100%;
@@ -54,12 +55,15 @@ div#buttons {
 /* For devices with screens 408px or less */
 
 @media only screen and (max-width:480px) {
-    body, html {
+
+    body,
+    html {
         width: 100%;
     }
 
     form {
-        min-height: 100%;   ;
+        min-height: 100%;
+        ;
         line-height: 50px;
         width: 100%;
         margin: 0px;
@@ -71,21 +75,20 @@ div#buttons {
     }
 
     fieldset {
-        border: 0px white solid;
-        
+        border: none;
+        background: linear-gradient(white, rgb(230, 230, 230), white);
     }
 
-    input#name, input#phone, input#mail {
+    input#name,
+    input#phone,
+    input#mail {
         margin: 0px;
         border: 1px solid black;
     }
 
     textarea {
-        border: 1px solid red;
         width: 80%;
         display: block;
         font-size: 12px;
     }
-
-
 }

@@ -28,6 +28,7 @@ h1 {
 nav {
     height: 100%;
     background-color: rgb(247, 148, 29);
+    padding-top: 10px;
 }
 
 /* fixes container collapse */
@@ -128,16 +129,24 @@ Mobile Styles up to 480 pixels
 
 /* this is a media query for mobile devices with a max width of 480 pixels */
 @media only screen and (max-width:480px) {
+    .hide {
+        display: none;
+    }
+
     nav ul li {
         text-align: center;
         list-style: none;
-        display: inline;
         padding: 0px 50px 5px 50px;
         width: 100%;
     }
 
     nav ul li a {
         color: black;
+        font-size: 15px;
+    }
+
+    #logo {
+        margin-left: 175px;
     }
 
     nav li {
@@ -155,12 +164,3 @@ Mobile Styles up to 480 pixels
         display: none;
     }
 }
-
-/*
-============================================
-Tablet and Desktop Devices: 481px or more
-============================================
-*/
-
-/* this is a media query for devices with a width of 481 pixels or greater*/
-@media only screen and (min-width:481px) {}

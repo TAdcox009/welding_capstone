@@ -47,17 +47,3 @@ div#body p {
         width: 100%;
     }
 }
-
-/*
-============================================
-Tablet and Desktop Devices: 481px or more
-============================================
-*/
-
-/* this is a media query for devices with a width of 481 pixels or greater*/
-@media only screen and (min-width:481px) {
-    .slideshow-container {
-        margin-top: 60px;
-        width: 100%;
-    }
-}

@@ -171,4 +171,38 @@ Tablet and Desktop Devices: 481px or more
 */
 
 /* this is a media query for devices with a width of 481 pixels or greater*/
-@media only screen and (min-width:481px) {}
+@media only screen and (min-width:481px) {
+    .hide {
+        display: none;
+    }
+
+    nav ul li {
+        text-align: center;
+        list-style: none;
+        padding: 0px 25px 5px 25px;
+    }
+
+    nav ul li a {
+        color: black;
+        font-size: 15px;
+    }
+
+    #logo {
+        margin-left: 255px;
+    }
+
+    nav li {
+        display: block;
+        float: left;
+        width: 20%;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+
+    #p2,
+    footer a img {
+        display: none;
+    }
+}

@@ -13,7 +13,7 @@
     height: 45%;
 }
 
-#vid{
+#vid {
     width: 560px;
     height: 315px;
 }
@@ -38,6 +38,10 @@ section#text {
     margin-right: 50px;
 }
 
+footer {
+    padding-bottom: 15px;
+}
+
 /* Media Queries */
 
 /*
@@ -53,7 +57,7 @@ Mobile Styles up to 480 pixels
     }
 
     .abt {
-        text-indent: 0em;
+        text-indent: 2em;
         padding-top: 10px;
     }
 
@@ -70,4 +74,22 @@ Tablet and Desktop Devices: 481px or more
 */
 
 /* this is a media querie for devices with a width of 481 pixels or greater*/
-@media only screen and (min-width:481px) {}
+@media only screen and (min-width:481px) {
+    section#text {
+        width: 95%;
+    }
+
+    .abt {
+        text-indent: 2em;
+        padding-top: 10px;
+    }
+
+    #vid {
+        width: 325px;
+        height: 175px;
+    }
+
+    #right {
+        margin-right: 10em;
+    }
+}

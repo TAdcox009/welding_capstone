@@ -17,7 +17,8 @@
 <body>
     <header>
         <img src="Pictures/04_WM-Logo-Black.png" alt="wmLogo" id="logo">
-        <h1 class="hide">Campus Contacts</h1>
+        <h1 id="floatRht" class="hide">Campus Contacts</h1>
+        <div id="str"></div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -38,8 +39,8 @@
             </div>
 
             <div class="formRow">
-                <label for="phone">Phone number</label>
-                <input name="custPhone" id="phone" type="tel" placeholder="(nnn) nnn-nnnn"
+                <label for="phone">Phone number*</label>
+                <input name="phone" id="phone" type="tel" placeholder="(nnn) nnn-nnnn" required
                     pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" />
             </div>
 
@@ -73,6 +74,7 @@
         <p id="p2">Follow West-MEC on social media?</p>
     </footer>
     <script src="JS/fomValidation.js" async></script>
+    <script src="JS/animation.js"></script>
 </body>
 
 </html>

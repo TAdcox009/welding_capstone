@@ -14,7 +14,7 @@ body {
     height: 45%;
 }
 
-h1 {
+#floatRht {
     display: block;
     text-align: center;
     font-size: 1.2em;
@@ -28,7 +28,7 @@ h1 {
 nav {
     height: 100%;
     background-color: rgb(247, 148, 29);
-    padding-top: 10px;
+    padding-top: 5px;
 }
 
 /* fixes container collapse */
@@ -117,6 +117,14 @@ footer p:last-of-type {
     float: right;
 }
 
+#str {
+    color: black;
+    font-weight: bold;
+    display: inline;
+    font-size: 50px;
+    padding-left: 300px;
+}
+
 
 
 /* Media Queries */
@@ -129,7 +137,7 @@ Mobile Styles up to 480 pixels
 
 /* this is a media query for mobile devices with a max width of 480 pixels */
 @media only screen and (max-width:480px) {
-    .hide {
+    .hide, #floatRht {
         display: none;
     }
 
@@ -162,5 +170,13 @@ Mobile Styles up to 480 pixels
     #p2,
     footer a img {
         display: none;
+    }
+
+    #str {
+        color: black;
+        font-weight: bold;
+        display: inline;
+        font-size: 25px;
+        padding-left: 87.5px;
     }
 }

@@ -4,21 +4,33 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+            <!-- Title of the page that appears in the tab. -->
         <title>CTSO</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+            <!-- Links styles sheets. -->
         <link rel="stylesheet" href="CSS/reset.css" />
         <link rel="stylesheet" href="CSS/general.css" />
         <link rel="stylesheet" href="CSS/ctso.css" />
+
+          <!-- Adds a image to the tab (favicon). -->
         <link rel="icon" type="image/png" href="Pictures/02. Arrows Orange Gradient.png" />
+
+            <!-- Links a font from https://fonts.google.com/ -->
         <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet" />
     </head>
 
     <body>
-
         <header>
+            
+        <!-- Adds the west mec logo above the nav, if the image does not display it will say "wmlogo" instead, it is given the id of logo to be stylized in general.css. -->
             <img src="Pictures/04_WM-Logo-Black.png" alt="wmLogo" id="logo" />
-            <div id="str"></div>
-            <h1 id="floatRht" class="hide">CTSO</h1>
+
+                <!-- An empty h1 tag, the text that appears in this h1 is defined in animation.js -->
+            <h1 id="ctso" class="floatRht" class="hide"></h1>
+
+                    <!-- Links to other pages on the website -->
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -30,14 +42,16 @@
             </nav>
         </header>
 
+            <!-- A youtube video and some links to important information about the program is grouped in an aside element so it can be floated right. -->
         <aside id="right">
             <iframe id="vid" src="https://www.youtube.com/embed/AWgDfgDAtp4" frameborder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
 
-            <a href="https://www.skillsusa.org/" id="ctso">https://www.skillsusa.org/</a>
+            <a href="https://www.skillsusa.org/" id="usa">https://www.skillsusa.org/</a>
         </aside>
 
+            <!-- P tags are grouped inside a section element so they can be floated left  -->
         <section id="text">
             <p class="abt">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, illum voluptate. Recusandae, sint
@@ -80,6 +94,11 @@
                 reprehenderit odio atque dolor sequi neque at. Saepe debitis animi consectetur recusandae doloremque
                 repellat non odit. corporis natus accusamus enim.
             </p>
+
+            <!-- These move evrything down so the footer is pushed to the bottom of the page. -->
+            <br>
+            <br>
+            <br>
             <br>
             <br>
             <br>
@@ -88,6 +107,7 @@
             <br>
         </section>
 
+        <!-- The link to west mecs website is in the footer, if you click on one of the images it takes you to the social media page the logo is attached too. -->
         <footer>
             <p>Visit West-MEC's Full page for other program oprotunities: <a
                     href="https://west-mec.edu/">https://West-MEC.edu/</a></p>
@@ -100,6 +120,8 @@
                     alt="facebookLogo"></a>
             <p id="p2">Follow West-MEC on social media?</p>
         </footer>
+
+            <!-- Links JavaScript file(s). -->
         <script src="JS/animation.js"></script>
     </body>
 

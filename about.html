@@ -4,20 +4,33 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Title of the page that appears in the tab. -->
     <title>About</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Links styles sheets. -->
     <link rel="stylesheet" href="CSS/reset.css" />
     <link rel="stylesheet" href="CSS/general.css" />
     <link rel="stylesheet" href="CSS/about.css" />
+
+    <!-- Adds a image to the tab (favicon). -->
     <link rel="icon" type="image/png" href="Pictures/02. Arrows Orange Gradient.png" />
+
+    <!-- Links a font from https://fonts.google.com/ -->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet" />
 </head>
 
 <body>
     <header>
+
+        <!-- Adds the west mec logo above the nav, if the image does not display it will say "wmlogo" instead, it is given the id of logo to be stylized in general.css. -->
         <img src="Pictures/04_WM-Logo-Black.png" alt="wmLogo" id="logo" />
-        <div id="str"></div>
-        <h1 id="floatRht" class="hide">About the Program</h1>
+
+        <!-- An empty h1 tag, the text that appears in this h1 is defined in animation.js -->
+        <h1 id="about" class="floatRht" class="hide"></h1>
+
+        <!-- Links to other pages on the website -->
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -29,6 +42,7 @@
         </nav>
     </header>
 
+    <!-- A youtube video and some links to important information about the program is grouped in an aside element so it can be floated right. -->
     <aside id="right">
         <iframe id="vid" src="https://www.youtube.com/embed/7b1wDssU3Fk" frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -37,6 +51,8 @@
         <a href="PDFs/19-20-Welding-Info-Sheet.pdf" target="_blank" class="downloads">Certification
             Sheet</a>
         <a href="PDFs/19-20-Central-Programs-Calendar.pdf" target="_blank" class="downloads">Calendar</a>
+
+        <!-- These move evrything down so the footer is pushed to the bottom of the page. -->
         <br>
         <br>
         <br>
@@ -47,8 +63,8 @@
         <br>
     </aside>
 
+    <!-- P tags are grouped inside a section element so they can be floated left  -->
     <section id="text">
-        <!-- change this later -->
         <p class="abt">
             Welding is the process of joining together metal pieces or parts by heating the surfaces to the point of
             melting
@@ -78,6 +94,7 @@
         </p>
     </section>
 
+<!-- The link to west mecs website is in the footer, if you click on one of the images it takes you to the social media page the logo is attached too. -->
     <footer>
         <p>Visit West-MEC's Full page for other program oprotunities: <a
                 href="https://west-mec.edu/">https://West-MEC.edu/</a></p>
@@ -90,6 +107,8 @@
                 alt="facebookLogo"></a>
         <p id="p2">Follow West-MEC on social media?</p>
     </footer>
+
+    <!-- Links JavaScript file(s). -->
     <script src="JS/animation.js"></script>
 </body>
 

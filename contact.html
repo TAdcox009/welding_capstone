@@ -4,23 +4,36 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+     <!-- Title of the page that appears in the tab. -->
     <title>Contact</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Links styles sheets. -->
     <link rel="stylesheet" href="CSS/reset.css" />
     <link rel="stylesheet" href="CSS/general.css" />
     <link rel="stylesheet" href="CSS/contact.css" />
+
+     <!-- Adds a image to the tab (favicon). -->
     <link rel="icon" type="image/png" href="Pictures/02. Arrows Orange Gradient.png" />
+
+      <!-- Links a font from https://fonts.google.com/ -->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet" />
 </head>
 
 <body>
     <header>
+
+          <!-- Adds the west mec logo above the nav, if the image does not display it will say "wmlogo" instead, it is given the id of logo to be stylized in general.css. -->
         <img src="Pictures/04_WM-Logo-Black.png" alt="wmLogo" id="logo">
-        <h1 id="floatRht" class="hide">Campus Contacts</h1>
-        <div id="str"></div>
+
+         <!-- An empty h1 tag, the text that appears in this h1 is defined in animation.js -->
+        <h1 id="contact" class="floatRht" class="hide"></h1>
         <nav>
             <ul>
+
+                     <!-- Links to other pages on the website -->
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="ctso.html">CTSO</a></li>
@@ -30,37 +43,56 @@
         </nav>
     </header>
 
+    <!-- A form that submits contact information -->
     <form method="post">
         <fieldset>
+
+            <!-- The title of the form, appears at the top of the form. -->
             <legend>Contact us for more questions!</legend>
+            
+            <!-- This field requests the users name -->
             <div class="formRow">
                 <label for="name">Name*</label>
+
+                <!-- This field is required, has placeholder text to let the user know what is needed. -->
                 <input name="custName" id="name" type="text" placeholder="First and Last name" required />
             </div>
 
+            <!-- This field requests the users phone number -->
             <div class="formRow">
                 <label for="phone">Phone number*</label>
+
+                 <!-- This field is required, has placeholder text to let the user know what is needed. Has a regex to test if the number is real and not just a random set of numbers -->
                 <input name="phone" id="phone" type="tel" placeholder="(nnn) nnn-nnnn" required
                     pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" />
             </div>
 
+            <!-- This field requests the users email -->
             <div id="formRow">
                 <label for="mail">E-mail*</label>
-                <input type="email" name="custEmail" id="mail" required />
+
+                         <!-- This field is required, has placeholder text to let the user know what is needed. Has a regex to test if the email is real and not just a random set of characters -->
+                <input type="email" name="custEmail" id="mail" placeholder="example@gmail.com" required />
             </div>
 
             <div>
+                <!-- A text area box to let the user type questions they have. -->
                 <label for="commBox" id="commBox">Lets us know of any questions you have</label>
                 <textarea name="custExp" id="commBox"></textarea>
 
         </fieldset>
 
         <div id="buttons">
+
+            <!-- Submit button -->
             <input type="submit" id="submittButton" value="Submit My Survey" />
+
+            <!-- Cancel button -->
             <input type="reset" value="Cancel" />
         </div>
     </form>
 
+    <!-- The link to west mecs website is in the footer, if you click on one of the images it takes you to the social media page the logo is attached too. -->
     <footer>
         <p>Visit West-MEC's Full page for other program oprotunities: <a
                 href="https://west-mec.edu/">https://West-MEC.edu/</a></p>
@@ -73,6 +105,7 @@
                 alt="facebookLogo"></a>
         <p id="p2">Follow West-MEC on social media?</p>
     </footer>
+     <!-- Links JavaScript file(s). -->
     <script src="JS/fomValidation.js" async></script>
     <script src="JS/animation.js"></script>
 </body>

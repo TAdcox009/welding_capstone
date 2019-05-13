@@ -1,20 +1,22 @@
-/* 
-    Gabriel Hernandez
-    CSS that apply to all pages (e.g. nav, footer, h1)
+@charset "utf-8";
 
-*/
+/* CSS that applies to all pages*/
+
+/* Sets the font for the HTML and body element, gives them a height of 100% */
 html,
 body {
     font-family: 'Roboto Condensed', sans-serif;
     height: 100%;
 }
 
-#logo {
+/* Sets the width and height of the west mec logo so its looks good above the nav. */
+img#logo {
     width: 20%;
     height: 45%;
 }
 
-#floatRht {
+/* The h1 with the class of floatRht is being floated right, has 5 pixels of space between each word, adds 10 pixels of padding to the top so its not against the top of the page, 20 pixels of padding to the right so its not against the right side of the page,chnages the font size to 1.5 em  */
+h1.floatRht {
     display: block;
     text-align: center;
     font-size: 1.2em;
@@ -25,26 +27,28 @@ body {
 
 /* Nav styles */
 
+/* Changes the backgroung color of the nav to orange, adds 5 pixels of padding to the top so the west mec logo isnt touching it. */
 nav {
     height: 100%;
     background-color: rgb(247, 148, 29);
     padding-top: 5px;
 }
 
-/* fixes container collapse */
+/* Fixes container collapse. */
 nav::after {
     clear: both;
     content: "";
     display: table;
 }
 
-/* fixes container collapse */
+/* Fixes container collapse. */
 nav ul::after {
     clear: both;
     content: "";
     display: table;
 }
 
+/* Aligns the text to the center, gets rid of the line under the text, adds 5 pixels of padding to the top and bottom so its looks better. */
 nav ul li {
     text-align: center;
     list-style: none;
@@ -53,7 +57,7 @@ nav ul li {
     padding-bottom: 5px;
 }
 
-/* displays the nav list items as block, floated left, has a width of 25% */
+/* Displays the nav list items as block, floated left, has a width of 20% so the links are spaced evenly */
 nav li {
     font-size: 20px;
     display: block;
@@ -63,7 +67,7 @@ nav li {
     letter-spacing: 5px;
 }
 
-/* changes the text color to black */
+/* Changes the text color to black and changes the font size to 20 pixels. */
 nav ul li a {
     color: black;
     width: 100%;
@@ -71,7 +75,7 @@ nav ul li a {
     font-size: 20px;
 }
 
-/* Makes the nav a little more responsive */
+/* When you hover over the links in the nav the font size goes from 20 pixels to 22 pixels. */
 nav ul li a:hover,
 nav ul li a:active {
     background-color: rgb(229, 137, 25);
@@ -80,13 +84,15 @@ nav ul li a:active {
 
 /* End Nav styles */
 
-
+/* Gives the images with the class of slidePics a width of 100% */
 img.slidePics {
     width: 100%;
 }
 
 
-/* Footer */
+/* Footer styles */
+
+/* Changes the background color of the footer to black, changes the text clor to white, gives the footer a width of 100%, adds 10 pixels of padding to the top and bottom so it looks better. */
 footer {
     background-color: rgb(28, 28, 28);
     color: rgb(227, 227, 227);
@@ -96,12 +102,14 @@ footer {
     width: 100%;
 }
 
+/* Displays them as inline, adds 15 pixels of padding to the left and right so they have space between each p tag in the footer. */
 footer p {
     display: inline;
     padding-left: 15px;
     padding-right: 15px;
 }
 
+/* floats the images in the footer to the right, makes them square by setting the width and height to 20 pixels. */
 footer a img {
     float: right;
     width: 20px;
@@ -109,23 +117,16 @@ footer a img {
     margin-left: 10px;
 }
 
+/* changes the text color of the link to white. */
 footer a {
     color: rgb(227, 227, 227);
 }
 
+/* floates the last p tag to the right so it doesnt affect the other p tag. */
 footer p:last-of-type {
     float: right;
 }
-
-#str {
-    color: black;
-    font-weight: bold;
-    display: inline;
-    font-size: 50px;
-    padding-left: 300px;
-}
-
-
+/* End Footer styles */
 
 /* Media Queries */
 
@@ -137,10 +138,13 @@ Mobile Styles up to 480 pixels
 
 /* this is a media query for mobile devices with a max width of 480 pixels */
 @media only screen and (max-width:480px) {
-    .hide, #floatRht {
+
+    /* The h1s with the class of hide and floatRht are not being displayed on phones. */
+    h1.hide, h1.floatRht {
         display: none;
     }
 
+    /* Aligns the text to the center, gets rid of the line under the text, adds 0 pixels of padding to the top, adds 50 pixels to the left and right so the links are centered better, and 5 pixels to the bottom so there is space between each link. */
     nav ul li {
         text-align: center;
         list-style: none;
@@ -148,35 +152,33 @@ Mobile Styles up to 480 pixels
         width: 100%;
     }
 
+    /* Changes the text color to black and changes the font size to 15 pixels.*/
     nav ul li a {
         color: black;
         font-size: 15px;
     }
 
-    #logo {
+    
+/* Gives the image with the ID of logo 175 pixels of margin space to the left to center it. */
+    img#logo {
         margin-left: 175px;
     }
 
+    /* Displays the nav list items as block, floated left, has a width of 20% so the links are spaced evenly */
     nav li {
         display: block;
         float: left;
         width: 20%;
     }
 
+    /* Changes the font size to 12 pixels. */
     footer p {
         font-size: 12px;
     }
 
-    #p2,
+    /* The images in the footer and the p tag with the ID of p2 is not being displayed */
+    p#p2,
     footer a img {
         display: none;
-    }
-
-    #str {
-        color: black;
-        font-weight: bold;
-        display: inline;
-        font-size: 25px;
-        padding-left: 87.5px;
     }
 }

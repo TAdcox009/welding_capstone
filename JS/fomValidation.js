@@ -1,8 +1,5 @@
 "use strict";
-/*
-    Gabriel Hernandez
-    JS for form validaiton
-*/
+/* JavaScript for form validaiton. */
 
 // runs the function that runs the other function when the window is loaded
 window.addEventListener("load", function() {

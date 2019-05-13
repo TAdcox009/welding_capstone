@@ -1,4 +1,9 @@
-.downloads {
+@charset "utf-8";
+
+/* CSS for the about page. */
+
+/* The a tags with the class of downloads is being centered with no text decoration. The padding to the top is 5 px to have separation between each one, it has 50 pixels of padding to the right so its not against the end of the screen, 0 pixels of padding at the bottom because none was needed, and 50 pixels to the right so its centered, the text color is changed to orange so it stands out but is still noticable as a link. */
+a.downloads {
     text-align: center;
     list-style: none;
     display: block;
@@ -8,36 +13,35 @@
     line-height: 30px;
 }
 
-#logo {
-    width: 20%;
-    height: 45%;
-}
-
-#vid {
+/* Changes the width and height of the video so it takes up more space on the page. */
+iframe#vid {
     width: 560px;
     height: 315px;
 }
 
+/* Floats the content inside the section element with the id of text so it doesnt affect the video (wrap around it and/or go under it). */
 section#text {
     display: block;
     float: left;
     width: 50%;
 }
 
-.abt {
+/* This indents the text so it looks more like a paragraph, adds 20 pixels of padding to the top so its not against the nav, adds 20 pixels of padding to the left so its not against the end of the page. */
+p.abt {
     text-indent: 2em;
     padding-top: 20px;
     padding-left: 20px;
 }
 
-
-#right {
+/* The contents in the aside element with the ID of right is being floated right, adds 20 pixels of padding to the top so its not against the nav, adds 50 pixels of margin spce to the right so its not against the end of the page. */
+aside#right {
     float: right;
     display: block;
     padding-top: 20px;
     margin-right: 50px;
 }
 
+/* The footer on the about page didnt reach the bottom of the screen so this adds 15 pixels of padding to the bottom of it so it can reach the bottom of the page. */
 footer {
     padding-bottom: 15px;
 }
@@ -52,16 +56,20 @@ Mobile Styles up to 480 pixels
 
 /* this is a media querie for mobile devices with a max width of 480 pixels */
 @media only screen and (max-width:480px) {
+
+    /* Sets the width of the element to 95% of the screen. */
     section#text {
         width: 95%;
     }
 
-    .abt {
+/* This indents the text so it looks more like a paragraph, adds 10 pixels of padding to the top so its not against the nav. */
+    p.abt {
         text-indent: 2em;
         padding-top: 10px;
     }
 
-    #vid {
+    /* Changes the width and height of the video so it takes up more space on the page. */
+    iframe#vid {
         width: 325px;
         height: 175px;
     }

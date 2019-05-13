@@ -1,6 +1,11 @@
+"use strict";
+
+// JavaScript for the slideshow on the home page.
+
 var slideIndex = 0;
 showSlides();
 
+// Changes which image shows.
 function showSlides() {
     var i;
     var slides = document.getElementsByClassName("mySlides");
@@ -12,5 +17,6 @@ function showSlides() {
         slideIndex = 1
     }
     slides[slideIndex - 1].style.display = "block";
-    setTimeout(showSlides, 3000); // Change image every 3 seconds
+    // Changes the image every 3 seconds.
+    setTimeout(showSlides, 3000); 
 }

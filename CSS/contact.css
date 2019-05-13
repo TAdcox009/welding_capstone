@@ -1,12 +1,16 @@
-/* 
-    Gabriel Hernadnez
-    Css for the contact page
-*/
+@charset "utf-8";
+
+/* CSS for the contact page */
+
+/* Sets the width for the body and html element to 100%. */
 body,
 html {
     width: 100%;
 }
 
+/* form styles */
+
+/* sets the min and max width of the form, gives it a line height of 50 pixels. */
 form {
     min-height: 81%;
     margin: auto;
@@ -16,10 +20,12 @@ form {
     line-height: 50px;
 }
 
+/* The top and bottom magrin is set to 0 pixels and the left and right margin is set to 50 pixels. */
 div {
     margin: 0px 50px;
 }
 
+/* Adds a border around the form, rounds the border, adds a linear-gradient to inside the form. */
 fieldset {
     border-width: 3px;
     border-color: black;
@@ -27,11 +33,13 @@ fieldset {
     background: linear-gradient(white, rgb(230, 230, 230));
 }
 
+/* Sets the font size of the legend text to 2em, adds 5 pixels of space between each letter. */
 legend {
     font-size: 2em;
     letter-spacing: 5px;
 }
 
+/* For the input element with the IDs of name, phone, and mail, they are being floated right, and given a width of 30% of the screen and 20 pixels of height. */
 input#name,
 input#phone,
 input#mail {
@@ -40,6 +48,7 @@ input#mail {
     height: 20px;
 }
 
+/* Floats the textarea box right to line up with the input boxes, sets the width and height of the textarea box. */
 textarea {
     margin-top: 10px;
     height: 100px;
@@ -48,37 +57,52 @@ textarea {
     font-size: 14px;
 }
 
+/* Centers the submit and cancel button for the form. */
 div#buttons {
     text-align: center;
 }
+
+/* end form styles */
+
+/* Media Queries */
+
+/*
+===============================
+Mobile Styles up to 480 pixels
+===============================
+*/
 
 /* For devices with screens 408px or less */
 
 @media only screen and (max-width:480px) {
 
+    /* Sets the width for the body and html element to 100%. */
     body,
     html {
         width: 100%;
     }
 
     form {
+        /* Sets the width and height of the form. */
         min-height: 100%;
-        ;
         line-height: 50px;
         width: 100%;
         margin: 0px;
     }
 
+    /* Sets the font size of the legend text to 18 pixels, adds 2 pixels of space between each letter. */
     legend {
         font-size: 18px;
         letter-spacing: 2px;
     }
 
+    /* Gets rid of the border around the form and adds A linear-gradient to the form. */
     fieldset {
         border: none;
         background: linear-gradient(white, rgb(230, 230, 230), white);
     }
 
+    /* For the input element with the IDs of name, phone, and mail, they are given a black border. */
     input#name,
     input#phone,
     input#mail {
@@ -86,6 +110,7 @@ div#buttons {
         border: 1px solid black;
     }
 
+    /* Sets the width of the textarea box to 80% of the screen, and makes the font 12 pixels. */
     textarea {
         width: 80%;
         display: block;

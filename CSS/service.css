@@ -1,3 +1,6 @@
+@charset "utf-8";
+
+/* Separates the page into 3 sections, adds a line between each section. */
 div#container {
     column-count: 3;
     column-rule: 2px solid #999;
@@ -5,19 +8,21 @@ div#container {
     padding-bottom: 30px;
 }
 
+/* The div element with the class of column is being displayed as block and has 10 pixels of padding to the left and right */
 div.column {
-    /* width: 33.33%; */
     display: block;
     padding-left: 10px;
     padding-right: 10px;
 }
 
+/* Rounds the images a little, adds 10 pixels of padding to the top so its not against the nav. */
 img.exp {
     width: 100%;
     padding-top: 10px;
     border-radius: 25px;
 }
 
+/* Adds 35 pixels between each line */
 figcaption {
     line-height: 35px;
 }

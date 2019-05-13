@@ -1,48 +1,50 @@
-/* 
-    Todd Adcox & Gabriel Hernandez
-    CSS for the index.html
+@charset "utf-8";
 
-*/
+/* CSS for the index.*/
 
-/* This is for the image and the its slide show */
+/* Slide show styles */
 
+/* Adds 20 pixels to the top of the slideshow so its not against the nav, gives it a width of 100%. */
 img.slidePics {
     padding-top: 20px;
     width: 100%;
 }
 
-/* Slideshow container */
-.slideshow-container {
+/* Sets the width to 60%. */
+div.slideshow-container {
     width: 60%;
     position: relative;
     margin: auto;
 }
 
 /* Hide the images by default */
-.mySlides {
+div.mySlides {
     display: none;
 }
 
-/* Number text (1/3 etc) */
-.numbertext {
-    color: #f2f2f2;
+/* Number text (1/4), has a font size of 14 pixels, changes the text color to white. */
+div.numbertext {
+    color: white;
     font-size: 14px;
     padding: 8px 12px;
     position: absolute;
     top: 20px;
 }
 
-/* end of slide show css */
+/* End Slide show styles */
 
-div#body p {
-    font-size: 18px;
-    display: block;
+/* Media Queries */
 
-}
+/*
+===============================
+Mobile Styles up to 480 pixels
+===============================
+*/
 
 /* this is a media query for mobile devices with a max width of 480 pixels */
 @media only screen and (max-width:480px) {
-    .slideshow-container {
+    /* sets the width to 100% and adds 60 pixels of margin space so its not against the nav. */
+    div.slideshow-container {
         margin-top: 60px;
         width: 100%;
     }

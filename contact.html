@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-     <!-- Title of the page that appears in the tab. -->
+    <!-- Title of the page that appears in the tab. -->
     <title>Contact</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,25 +15,25 @@
     <link rel="stylesheet" href="CSS/general.css" />
     <link rel="stylesheet" href="CSS/contact.css" />
 
-     <!-- Adds a image to the tab (favicon). -->
+    <!-- Adds a image to the tab (favicon). -->
     <link rel="icon" type="image/png" href="Pictures/02. Arrows Orange Gradient.png" />
 
-      <!-- Links a font from https://fonts.google.com/ -->
+    <!-- Links a font from https://fonts.google.com/ -->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet" />
 </head>
 
 <body>
     <header>
 
-          <!-- Adds the west mec logo above the nav, if the image does not display it will say "wmlogo" instead, it is given the id of logo to be stylized in general.css. -->
+        <!-- Adds the west mec logo above the nav, if the image does not display it will say "wmlogo" instead, it is given the id of logo to be stylized in general.css. -->
         <img src="Pictures/04_WM-Logo-Black.png" alt="wmLogo" id="logo">
 
-         <!-- An empty h1 tag, the text that appears in this h1 is defined in animation.js -->
+        <!-- An empty h1 tag, the text that appears in this h1 is defined in animation.js -->
         <h1 id="contact" class="floatRht" class="hide"></h1>
         <nav>
             <ul>
 
-                     <!-- Links to other pages on the website -->
+                <!-- Links to other pages on the website -->
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="ctso.html">CTSO</a></li>
@@ -49,7 +49,7 @@
 
             <!-- The title of the form, appears at the top of the form. -->
             <legend>Contact us for more questions!</legend>
-            
+
             <!-- This field requests the users name -->
             <div class="formRow">
                 <label for="name">Name*</label>
@@ -62,7 +62,7 @@
             <div class="formRow">
                 <label for="phone">Phone number*</label>
 
-                 <!-- This field is required, has placeholder text to let the user know what is needed. Has a regex to test if the number is real and not just a random set of numbers -->
+                <!-- This field is required, has placeholder text to let the user know what is needed. Has a regex to test if the number is real and not just a random set of numbers -->
                 <input name="phone" id="phone" type="tel" placeholder="(nnn) nnn-nnnn" required
                     pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" />
             </div>
@@ -71,7 +71,7 @@
             <div id="formRow">
                 <label for="mail">E-mail*</label>
 
-                         <!-- This field is required, has placeholder text to let the user know what is needed. Has a regex to test if the email is real and not just a random set of characters -->
+                <!-- This field is required, has placeholder text to let the user know what is needed. Has a regex to test if the email is real and not just a random set of characters -->
                 <input type="email" name="custEmail" id="mail" placeholder="example@gmail.com" required />
             </div>
 
@@ -105,7 +105,7 @@
                 alt="facebookLogo"></a>
         <p id="p2">Follow West-MEC on social media?</p>
     </footer>
-     <!-- Links JavaScript file(s). -->
+    <!-- Links JavaScript file(s). -->
     <script src="JS/fomValidation.js" async></script>
     <script src="JS/animation.js"></script>
 </body>

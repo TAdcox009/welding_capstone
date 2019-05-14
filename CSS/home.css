@@ -2,26 +2,19 @@
 
 /* CSS for the index.*/
 
-/* Slide show styles */
-
-<<<<<<< Updated upstream
-/* Adds 20 pixels to the top of the slideshow so its not against the nav, gives it a width of 100%. */
-img.slidePics {
-    padding-top: 20px;
-    width: 100%;
+html, 
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    height: 100%;
 }
 
-/* Sets the width to 60%. */
-div.slideshow-container {
-    width: 60%;
-=======
+/* Slide show styles */
+
 /* Slideshow container */
 .slideshow-container {
-    width: 55%;
->>>>>>> Stashed changes
+    width: 60%;
     position: relative;
-    left: 20px;
-    margin: 0px auto; 
+    margin:  auto; 
 }
 
 img.slidePics {
@@ -45,16 +38,9 @@ div.numbertext {
 
 /* End Slide show styles */
 
-<<<<<<< Updated upstream
 /* Media Queries */
+/* Mobile Styles up to 480 pixels */
 
-/*
-===============================
-Mobile Styles up to 480 pixels
-===============================
-*/
-=======
->>>>>>> Stashed changes
 
 /* this is a media query for mobile devices with a max width of 480 pixels */
 @media only screen and (max-width:480px) {

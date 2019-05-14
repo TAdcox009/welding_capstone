@@ -4,7 +4,7 @@
 div#container {
     column-count: 3;
     column-rule: 2px solid #999;
-    margin-top: 50px;
+    margin-top: 20px;
     padding-bottom: 30px;
 }
 
@@ -25,4 +25,27 @@ img.exp {
 /* Adds 35 pixels between each line */
 figcaption {
     line-height: 35px;
+}
+
+div#mobile {
+    display: none;
+}
+
+/* Media Queries */
+
+/*
+===============================
+Mobile Styles up to 480 pixels
+===============================
+*/
+
+/* this is a media query for mobile devices with a max width of 480 pixels */
+@media only screen and (max-width:480px) {
+    div.computer {
+        display: none;
+    }
+
+    div#mobile {
+        display: block;
+    }
 }

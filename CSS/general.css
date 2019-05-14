@@ -16,7 +16,7 @@ img#logo {
 h1.floatRht {
     display: block;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1.5em;
     float: right;
     padding: 10px 20px 0px 0px;
     letter-spacing: 5px;
@@ -29,6 +29,7 @@ nav {
     height: 100%;
     background-color: rgb(247, 148, 29);
     padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 /* Fixes container collapse. */
@@ -91,12 +92,15 @@ img.slidePics {
 
 /* Changes the background color of the footer to black, changes the text clor to white, gives the footer a width of 100%, adds 10 pixels of padding to the top and bottom so it looks better. */
 footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
     background-color: rgb(28, 28, 28);
     color: rgb(227, 227, 227);
     padding-top: 10px;
-    padding-bottom: 10px;
-    clear: both;
+    padding-bottom: 10px;    
     width: 100%;
+    clear: both;
 }
 
 /* Displays them as inline, adds 15 pixels of padding to the left and right so they have space between each p tag in the footer. */

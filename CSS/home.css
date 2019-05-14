@@ -2,6 +2,12 @@
 
 /* CSS for the index.*/
 
+html, 
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    height: 100%;
+}
+
 /* Slide show styles */
 
 /* Slideshow container */

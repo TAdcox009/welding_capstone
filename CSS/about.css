@@ -56,13 +56,16 @@ Mobile Styles up to 480 pixels
 
 /* this is a media querie for mobile devices with a max width of 480 pixels */
 @media only screen and (max-width:480px) {
+    br.hide {
+        display: none;
+    }
 
     /* Sets the width of the element to 95% of the screen. */
     section#text {
         width: 95%;
     }
 
-/* This indents the text so it looks more like a paragraph, adds 10 pixels of padding to the top so its not against the nav. */
+    /* This indents the text so it looks more like a paragraph, adds 10 pixels of padding to the top so its not against the nav. */
     p.abt {
         text-indent: 2em;
         padding-top: 10px;

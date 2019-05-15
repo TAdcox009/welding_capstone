@@ -55,7 +55,7 @@ Mobile Styles up to 480 pixels
         width: 95%;
     }
 
-/* This indents the text so it looks more like a paragraph, adds 10 pixels of padding to the top so its not against the nav. */
+    /* This indents the text so it looks more like a paragraph, adds 10 pixels of padding to the top so its not against the nav. */
     p.abt {
         text-indent: 2em;
         padding-top: 10px;

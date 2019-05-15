@@ -1,7 +1,7 @@
 @charset "utf-8";
 
-html, 
-body{
+html,
+body {
     font-family: 'Roboto Condensed', sans-serif;
     height: 100%;
 }
@@ -98,7 +98,7 @@ footer {
     background-color: rgb(28, 28, 28);
     color: rgb(227, 227, 227);
     padding-top: 10px;
-    padding-bottom: 10px;    
+    padding-bottom: 10px;
     width: 100%;
     clear: both;
 }
@@ -127,6 +127,7 @@ footer a {
 footer p:last-of-type {
     float: right;
 }
+
 /* End Footer styles */
 
 /* Media Queries */
@@ -141,7 +142,9 @@ Mobile Styles up to 480 pixels
 @media only screen and (max-width:480px) {
 
     /* The h1s with the class of hide and floatRht are not being displayed on phones. */
-    h1.hide, h1.floatRht {
+    h1.hide,
+    h1.floatRht,
+    br.class {
         display: none;
     }
 
@@ -159,10 +162,10 @@ Mobile Styles up to 480 pixels
         font-size: 15px;
     }
 
-    
-/* Gives the image with the ID of logo 175 pixels of margin space to the left to center it. */
+
+    /* Gives the image with the ID of logo 175 pixels of margin space to the left to center it. */
     img#logo {
-        margin-left: 175px;
+        margin-left: 150px;
     }
 
     /* Displays the nav list items as block, floated left, has a width of 20% so the links are spaced evenly */

@@ -4,8 +4,7 @@
 function homeAnimation() {
 
     // What word(s) will animate.
-    var string = "Home"
-    s;
+    var string = "Home";
     var home = string.split("");
     // Gets the element by the id of where the word will animate.
     var el = document.getElementById("home");

@@ -4,6 +4,9 @@
 // runs the function that runs the other function when the window is loaded
 window.addEventListener("load", function() {
     document.getElementById("submittButton").onclick = runValidation;
+    document.getElementById("name").oninput = nameVal;
+    document.getElementById("phone").oninput = phoneVal;
+    document.getElementById("mail").oninput = mailVal;
 });
 
 
@@ -36,7 +39,6 @@ function phoneVal () {
         phoneNum.setCustomValidity("");
     }
 }
-
 
 // validate the e-mail 
 function mailVal() {
